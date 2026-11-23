@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>양파 YANGPA 링크 모음</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: quiet, film-photo calm — the portrait does the talking
+   IDEA: a printed photo card with the links set into its lower half
+   PICTURE: the supplied portrait, full height, fading into the dark jacket tones
+   COLOUR and TYPE: the photo's own grey wall and charcoal-brown; one face, Noto Sans KR
+   LAYOUT: one portrait column centred on a grey field, links stacked at the bottom */
+:root{color-scheme:light;--wall:#a3a9ac;--wall-edge:#868d90;--shade:24,20,24;--ink:#fff;--soft:rgba(255,255,255,.72)}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;min-height:100vh;font:16px/1.55 "Noto Sans KR",system-ui,-apple-system,sans-serif;color:var(--ink);background:radial-gradient(120% 90% at 50% 30%,#b7bcbf 0%,var(--wall) 45%,var(--wall-edge) 100%) fixed;display:flex;justify-content:center;overflow-x:clip}
+.card{position:relative;width:100%;max-width:480px;min-height:max(100svh,700px);display:flex;flex-direction:column;justify-content:flex-end;background:#9aa0a4 url(photo.jpg) 44% 0/cover no-repeat;box-shadow:0 0 60px rgba(0,0,0,.18)}
+.card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(var(--shade),0) 38%,rgba(var(--shade),.55) 60%,rgba(var(--shade),.9) 82%,rgba(var(--shade),.96) 100%);pointer-events:none}
+.inner{position:relative;padding:0 22px 30px}
+h1{margin:0;font-size:clamp(32px,8.5vw,40px);font-weight:700;line-height:1.1;letter-spacing:-.01em}
+.sub{margin:8px 0 0;font-size:15px;font-weight:400;color:var(--soft)}
+ul{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:10px}
+a.row{display:flex;align-items:center;gap:14px;min-height:62px;padding:10px 16px;border-radius:16px;color:var(--ink);text-decoration:none;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:background .15s ease}
+a.row:hover{background:rgba(255,255,255,.2)}
+a.row:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.ic{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.16)}
+.ic svg{width:20px;height:20px}
+.tx{flex:1}
+.tx b{display:block;font-size:16px;font-weight:500}
+.tx span{display:block;font-size:13px;font-weight:400;color:var(--soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.go{flex:none;width:18px;height:18px;opacity:.7}
+.note{margin:22px 0 0;font-size:13px;color:rgba(255,255,255,.55);text-align:center}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="inner">
+    <h1>양파 YANGPA</h1>
+    <p class="sub">유튜브 · 인스타그램 · 스포티파이 바로가기</p>
+
+    <ul>
+      <li><a class="row" href="https://www.youtube.com/@yangpa_official">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M9.5 7.5v9l7-4.5z"/></svg></span>
+        <span class="tx"><b>YouTube</b><span>@yangpa_official</span></span>
+        <svg class="go" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a></li>
+      <li><a class="row" href="https://www.instagram.com/yangpa_official/">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><rect x="4.5" y="4.5" width="15" height="15" rx="4.5"/><circle cx="12" cy="12" r="3.4"/><circle cx="16.6" cy="7.4" r=".9" fill="#fff" stroke="none"/></svg></span>
+        <span class="tx"><b>Instagram</b><span>@yangpa_official</span></span>
+        <svg class="go" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a></li>
+      <li><a class="row" href="https://open.spotify.com/artist/5Qr33OZrOzmTJwxpUVZI7m">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M6 9.5c4-1.3 8.5-.9 12 1"/><path d="M7 13c3.2-.9 6.6-.6 9.5.9"/><path d="M8 16.3c2.4-.6 4.8-.4 7 .7"/></svg></span>
+        <span class="tx"><b>Spotify</b><span>Yangpa 아티스트 페이지</span></span>
+        <svg class="go" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a></li>
+    </ul>
+
+    <p class="note">각 버튼은 양파의 공식 계정으로 연결되는 링크 모음입니다.</p>
+  </div>
+</main>
+</body>
+</html>
